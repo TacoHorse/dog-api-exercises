@@ -1,3 +1,31 @@
 *{
     box-sizing: border-box;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.dog-form, .dog-form2, .dog-form3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    align-items: center;
+}
+
+.dog-images {
+    display: flex;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dog-pic {
+    max-width: 400px;
+    object-fit: contain;
+    margin: 20px;
+    flex: 2 2 20%;
+}
