@@ -18,11 +18,11 @@ function handleUserInput() {
 
 function getRandomDog(breed) {
     fetch(`https://dog.ceo/api/breed/${breed}/images/random`)
-        .then(Response => Response.json())
+        .then(Response => {Response.json();})
         .then(ResponseJson => {
             $('.dog-images').empty();
             $('.dog-images').append(`<img class="dog-pic" src="${ResponseJson.message}">`);
         })
-        .catch(error => alert(`${ResponseJson.message}`));
+        .catch(error => alert('Something went wrong please check the URL and try again'))
 }
 $(initSite);
