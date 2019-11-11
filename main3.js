@@ -23,6 +23,6 @@ function getRandomDog(breed) {
             $('.dog-images').empty();
             $('.dog-images').append(`<img class="dog-pic" src="${ResponseJson.message}">`);
         })
-        .catch(error => alert(`${ResponseJson.message}`));
+        .catch(error => alert('Something went wrong please check the URL and try again'))
 }
 $(initSite);
